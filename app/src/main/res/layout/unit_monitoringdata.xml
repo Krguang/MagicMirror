@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:background="@drawable/monitor"
+     >
+
+   
+    <!-- 返回主界面 -->
+    <Button 
+        android:id="@+id/bt_loginback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1796dp"
+        android:layout_y="17dp"
+        android:background="@drawable/loginback"
+        android:onClick="loginback"
+    />
+       <Button 
+             android:id="@+id/bt_chuxaiowaring_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="490dp"
+             android:layout_y="480dp"
+             android:background="@drawable/init_ing"    
+    />
+    
+    
+    <Button 
+             android:id="@+id/bt_fengjiquefengwaring_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="758dp"
+             android:layout_y="480dp"
+             android:background="@drawable/init_ing"
+    />
+    
+    
+    <Button 
+             android:id="@+id/bt_fengjilun_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="680dp"
+             android:layout_y="300dp"
+             android:background="@drawable/fengshanlu1"
+    />
+    
+    
+    
+    
+       <Button 
+             android:id="@+id/bt_zhongxiaowaring_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="963dp"
+             android:layout_y="480dp"
+             android:background="@drawable/init_ing"       
+    />
+       
+       <!-- 水阀开度 -->
+    <TextView 
+               android:id="@+id/tv_wateropening_id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:typeface="monospace"
+               android:layout_x="1050dp"
+               android:layout_y="520dp"
+               android:textSize="25px"
+               android:textStyle="bold"
+               android:text="00.0%"      
+               android:textColor="#FFFFFF"
+        />
+       
+    <!-- 电加热 -->
+      <TextView 
+            
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:typeface="monospace"
+               android:layout_x="1285dp"
+               android:layout_y="435dp"
+               android:textSize="20px"
+               android:text="电加热"      
+               android:textColor="#FFFFFF"
+        />
+   <!-- 电加热段1 --> 
+       <Button 
+             android:id="@+id/bt_dianjiareone_id"     
+             android:layout_width="25dp"
+             android:layout_height="26dp"
+             android:layout_x="1270dp"
+             android:layout_y="465dp"
+             android:background="@drawable/init_ing"      
+    />
+        <!-- 电加热段2--> 
+        <Button 
+             android:id="@+id/bt_dianjiaretwo_id"
+             android:layout_width="25dp"
+             android:layout_height="26dp"
+             android:layout_x="1300dp"
+             android:layout_y="465dp"
+             android:background="@drawable/init_ing"      
+    />
+       
+     <!-- 电加热段3 --> 
+         <Button 
+             android:id="@+id/bt_dianjiarethree_id"
+             android:layout_width="25dp"
+             android:layout_height="26dp"
+             android:layout_x="1330dp"
+             android:layout_y="465dp"
+             android:background="@drawable/init_ing"      
+    />
+         
+        
+       <!-- 高温报警 -->
+       <Button 
+             android:id="@+id/bt_gaowenwaring_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1413dp"
+             android:layout_y="480dp"
+             android:background="@drawable/init_ing"      
+    />
+       
+       
+         <!-- 加湿器开度 -->
+        <TextView 
+               android:id="@+id/tv_HumidifieOpening_id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:typeface="monospace"
+               android:layout_x="1570dp"
+               android:layout_y="520dp"
+               android:textSize="25px"
+               android:textStyle="bold"
+               android:text="00.0%"      
+               android:textColor="#FFFFFF"
+        />
+       
+       <!-- 本地控制 -->
+       
+       <Button 
+             android:id="@+id/bt_bendicontrol_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1240dp"
+             android:layout_y="700dp"
+             android:background="@drawable/init_ing"      
+    />
+       <TextView 
+                
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1213dp"
+                   android:layout_y="760dp"
+                   android:textSize="25px"
+                   android:text="本地控制"      
+                   android:textColor="#FFFFFF"
+        />
+           
+       <!-- 远程控制 -->
+       <Button 
+             android:id="@+id/bt_yuanchengcontrol_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1380dp"
+             android:layout_y="700dp"
+             android:background="@drawable/init_ing"      
+    />
+       
+       <TextView 
+                
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1357dp"
+                   android:layout_y="760dp"
+                   android:textSize="25px"
+                   android:text="远程控制"      
+                   android:textColor="#FFFFFF"
+        />
+       
+       
+       
+       <!-- 冷水模式 -->
+       <Button 
+             android:id="@+id/bt_coldwater_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1520dp"
+             android:layout_y="700dp"
+             android:background="@drawable/init_ing"      
+    />
+       
+       
+       <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1503dp"
+                   android:layout_y="760dp"
+                   android:textSize="25px"
+                   android:text="冷水模式"      
+                   android:textColor="#FFFFFF"
+        />
+       
+       
+       
+       <!-- 热水模式 -->
+       <Button 
+             android:id="@+id/bt_hotwater_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1660dp"
+             android:layout_y="700dp"
+             android:background="@drawable/init_ing"      
+    />
+         <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1633dp"
+                   android:layout_y="760dp"
+                   android:textSize="25px"
+                   android:text="热水模式"      
+                   android:textColor="#FFFFFF"
+        />
+       
+       
+       <!-- 消毒运行 -->
+       <Button 
+             android:id="@+id/bt_xiaodu_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1800dp"
+             android:layout_y="700dp"
+             android:background="@drawable/init_ing"      
+    />
+       
+       
+         <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1777dp"
+                   android:layout_y="760dp"
+                   android:textSize="25px"
+                   android:text="消毒运行"      
+                   android:textColor="#FFFFFF"
+        />
+         
+         
+       
+       <!-- 排风运行 -->
+       <Button 
+             android:id="@+id/bt_paifeng_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1240dp"
+             android:layout_y="820dp"
+             android:background="@drawable/init_ing"      
+    />
+       
+       <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1213dp"
+                   android:layout_y="880dp"
+                   android:textSize="25px"
+                   android:text="排风运行"      
+                   android:textColor="#FFFFFF"
+        />
+       
+       
+       
+       <!-- 风机运行 -->
+        <Button 
+             android:id="@+id/bt_fengji_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1380dp"
+             android:layout_y="820dp"
+             android:background="@drawable/init_ing"      
+    />
+        <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1357dp"
+                   android:layout_y="880dp"
+                   android:textSize="25px"
+                   android:text="风机运行"      
+                   android:textColor="#FFFFFF"
+        />
+        
+       <!-- 值班运行 -->
+          <Button 
+             android:id="@+id/bt_zhiban_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1520dp"
+             android:layout_y="820dp"
+             android:background="@drawable/init_ing"      
+    />
+          <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1503dp"
+                   android:layout_y="880dp"
+                   android:textSize="25px"
+                   android:text="值班运行"      
+                   android:textColor="#FFFFFF"
+        />
+          
+          
+       <!-- 电加热运行 -->
+            <Button 
+             android:id="@+id/bt_dianjiare_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_x="1660dp"
+             android:layout_y="820dp"
+             android:background="@drawable/init_ing"      
+    />
+       <TextView      
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_x="1633dp"
+                   android:layout_y="878dp"
+                   android:textSize="25px"
+                   android:text="电加热运行"      
+                   android:textColor="#FFFFFF"
+        />
+       
+       
+         <Button 
+             android:id="@+id/bt_jinfengflow1_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="230dp"
+             android:layout_y="177dp"
+            
+    />
+       
+       
+       <Button 
+             android:id="@+id/bt_jinfengflow2_id"
+             android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="347dp"
+             android:layout_y="177dp"
+               
+    />
+         
+        <Button 
+             android:id="@+id/bt_jinfengflow3_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="1700dp"
+             android:layout_y="320dp"
+             
+    />   
+    
+        <Button 
+             android:id="@+id/bt_jinfengflow4_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="1817dp"
+             android:layout_y="320dp"
+               
+    />
+    <Button 
+             android:id="@+id/bt_jinfengflow5_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="1817dp"
+             android:layout_y="480dp"
+          
+    />
+        
+        <Button 
+             android:id="@+id/bt_jinfengflow6_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="1817dp"
+             android:layout_y="587dp"
+                
+    />
+       
+       <Button 
+             android:id="@+id/bt_jinfengflow7_id"
+             android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="1617dp"
+             android:layout_y="587dp"
+                 
+   />
+    <Button 
+             android:id="@+id/bt_jinfengflow8_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="1217dp"
+             android:layout_y="587dp"
+           
+    />      
+       
+      
+        <Button 
+             android:id="@+id/bt_jinfengflow9_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="300dp"
+             android:layout_y="1020dp"
+           
+    /> 
+       
+       
+          <Button 
+             android:id="@+id/bt_jinfengflow10_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="62dp"
+             android:layout_y="1020dp"
+           
+    /> 
+    
+            <Button 
+             android:id="@+id/bt_jinfengflow11_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="62dp"
+             android:layout_y="600dp"
+               
+    /> 
+       
+       <Button 
+             android:id="@+id/bt_jinfengflow12_id"
+              android:layout_width="45dp"
+             android:layout_height="40dp"
+             android:layout_x="200dp"
+             android:layout_y="320dp"
+              
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <EditText
+        android:id="@+id/et_slave_add"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_x="1799dp"
+        android:layout_y="828dp"
+        android:inputType="number"
+        android:maxLines="1"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1777dp"
+        android:layout_y="878dp"
+        android:text="从机地址"
+        android:textSize="25px"
+        android:textColor="#ffffff"/>
+</AbsoluteLayout>
