@@ -1,6 +1,7 @@
 package com.yy.k.magicmirror;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,7 +24,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     static {
         System.loadLibrary("native-lib");
@@ -212,8 +213,8 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("ljq", Context.MODE_WORLD_READABLE + Context.MODE_WORLD_WRITEABLE);
         sharedSlaveAdd=this.getSharedPreferences("slaveAdd", Context.MODE_WORLD_READABLE + Context.MODE_WORLD_WRITEABLE);
 
-        modbus_salve.start();
-      //  modbus_save_1.start();
+       // modbus_salve.start();
+        modbus_save_1.start();
         InitView();
         initOnTouchListener();
 
@@ -1438,96 +1439,97 @@ public class MainActivity extends AppCompatActivity {
         modbus_save_1.setErasure((short) 0);
     }
     private void initOnTouchListener(){
-        ButStart_shuoshu.setOnTouchListener(new View.OnTouchListener() {
+
+            ButStart_shuoshu.setOnTouchListener(new View.OnTouchListener() {
 
 
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    v.setBackgroundResource(R.drawable.start_down);
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    v.setBackgroundResource(R.drawable.start_up);
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        v.setBackgroundResource(R.drawable.start_down);
+                    } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                        v.setBackgroundResource(R.drawable.start_up);
+                    }
+
+                    return false;
                 }
-
-                return false;
-            }
-        });
+            });
 
 
-        ButStop_shuoshu.setOnTouchListener(new View.OnTouchListener() {
+            ButStop_shuoshu.setOnTouchListener(new View.OnTouchListener() {
 
 
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    v.setBackgroundResource(R.drawable.stop_down);
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    v.setBackgroundResource(R.drawable.stop_up);
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        v.setBackgroundResource(R.drawable.stop_down);
+                    } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                        v.setBackgroundResource(R.drawable.stop_up);
+                    }
+
+                    return false;
                 }
-
-                return false;
-            }
-        });
+            });
 
 
-        ButReset_shuoshu.setOnTouchListener(new View.OnTouchListener() {
+            ButReset_shuoshu.setOnTouchListener(new View.OnTouchListener() {
 
 
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    v.setBackgroundResource(R.drawable.reset_down);
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    v.setBackgroundResource(R.drawable.reset_up);
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        v.setBackgroundResource(R.drawable.reset_down);
+                    } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                        v.setBackgroundResource(R.drawable.reset_up);
+                    }
+
+
+                    return false;
                 }
+            });
 
 
-                return false;
-            }
-        });
+            ButStart_mazui.setOnTouchListener(new View.OnTouchListener() {
 
 
-        ButStart_mazui.setOnTouchListener(new View.OnTouchListener() {
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        v.setBackgroundResource(R.drawable.start_down);
+                    } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                        v.setBackgroundResource(R.drawable.start_up);
+                    }
 
 
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    v.setBackgroundResource(R.drawable.start_down);
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    v.setBackgroundResource(R.drawable.start_up);
+                    return false;
                 }
+            });
 
 
-                return false;
-            }
-        });
+            ButStop_mazui.setOnTouchListener(new View.OnTouchListener() {
 
 
-        ButStop_mazui.setOnTouchListener(new View.OnTouchListener() {
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        v.setBackgroundResource(R.drawable.stop_down);
+                    } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                        v.setBackgroundResource(R.drawable.stop_up);
+                    }
 
 
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    v.setBackgroundResource(R.drawable.stop_down);
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    v.setBackgroundResource(R.drawable.stop_up);
+                    return false;
                 }
+            });
 
 
-                return false;
-            }
-        });
+            ButReset_mazui.setOnTouchListener(new View.OnTouchListener() {
 
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        v.setBackgroundResource(R.drawable.reset_down);
+                    } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                        v.setBackgroundResource(R.drawable.reset_up);
+                    }
 
-        ButReset_mazui.setOnTouchListener(new View.OnTouchListener() {
-
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    v.setBackgroundResource(R.drawable.reset_down);
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    v.setBackgroundResource(R.drawable.reset_up);
+                    return false;
                 }
-
-                return false;
-            }
-        });
+            });
 
         ButDown_wendu.setOnTouchListener(new View.OnTouchListener() {
 

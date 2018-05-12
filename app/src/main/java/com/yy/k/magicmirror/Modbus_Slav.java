@@ -92,13 +92,13 @@ public class Modbus_Slav extends Thread {
                     */
             public void run() {
                 super.run();
-                com1.Open(1, 19200);
+                com1.Open(3, 19200);
                 timer10ms.schedule(taskPoll,5,5);//5ms后开始，每5ms轮询一次
 
                 while (!isInterrupted()) {
 
-            int[] RX = com1.Read();
-            if (RX != null) {
+                int[] RX = com1.Read();
+                if (RX != null) {
 
                 for (int rx:RX){        //遍历RX添加到txTemp中
                     rxTemp.add((byte)rx);

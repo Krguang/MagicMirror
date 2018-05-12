@@ -103,7 +103,7 @@ public class Modbus_Slav1 extends Thread {
      */
     public void run() {
         super.run();
-        com3.Open(3, 19200);
+        com3.Open(1, 19200);
         timer10ms.schedule(taskPoll,5,5);//5ms后开始，每5ms轮询一次
 
         while (!isInterrupted()) {
