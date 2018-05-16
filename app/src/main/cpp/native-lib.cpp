@@ -49,7 +49,7 @@ Java_com_yy_k_magicmirror_Serial_Open(JNIEnv *env, jobject instance, jint Port, 
         }
         else if(4 == Port)
         {
-            __android_log_print(ANDROID_LOG_INFO, "serial", "open fd /dev/ttyUSB0");
+            __android_log_print(ANDROID_LOG_INFO, "serial", "open fd /dev/ttyS4");
             fd=open("/dev/ttyUSB0",O_RDWR|O_NDELAY|O_NOCTTY);
         }
         else if(5 == Port)

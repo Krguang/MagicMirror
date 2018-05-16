@@ -30,6 +30,9 @@ public class MainActivity extends Activity {
         System.loadLibrary("native-lib");
     }
 
+    public static MainActivity mainActivity;
+    public static  Context context;
+
     private static final String TAG = "test";
     //请求码，表明当前activity的身份
     int REQUEST_CODE=1;
@@ -145,6 +148,8 @@ public class MainActivity extends Activity {
     private Button But_OfLightThe_Lamp;//光片灯
     private Button ButPrepare;//备用
     private Button ButErasure;//消音
+    private Button ButMonitor;
+
 
     private int jiZuQiTingCount = 0;
     private int zhiBanQiTingCount = 0;
@@ -209,6 +214,9 @@ public class MainActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        mainActivity = this;
+        context = this.getBaseContext();
 
         sharedPreferences = getSharedPreferences("ljq", Context.MODE_WORLD_READABLE + Context.MODE_WORLD_WRITEABLE);
         sharedSlaveAdd=this.getSharedPreferences("slaveAdd", Context.MODE_WORLD_READABLE + Context.MODE_WORLD_WRITEABLE);
@@ -1435,6 +1443,10 @@ public class MainActivity extends Activity {
             modbus_save_1.setErasure((short) 1);
         }
     }
+    public void Butmonitor(View view) {
+        intent.setClass(this,Monitor.class);
+        startActivity(intent);
+    }
     private void beepOff(){
         modbus_save_1.setErasure((short) 0);
     }
@@ -2076,10 +2088,11 @@ public class MainActivity extends Activity {
         /***
          * 备用
          */
-        ButPrepare = (Button) findViewById(R.id.beiyong_id);
+        //ButPrepare = (Button) findViewById(R.id.beiyong_id);
         /***
          * 消音
          */
         ButErasure = (Button) findViewById(R.id.xiaoyin_id);
+        ButMonitor = findViewById(R.id.monitor_id);
     }
 }

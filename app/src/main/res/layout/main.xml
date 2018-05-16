@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.yy.k.magicmirror.MainActivity">
+    tools:context="shyueyao.action.NewProjectTpanelActivity">
 
 
     <TextView
@@ -105,8 +105,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="ButStart_shuoshu"
         android:background="@drawable/start_up"
+        android:onClick="ButStart_shuoshu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -125,8 +125,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="ButStop_shuoshu"
         android:background="@drawable/stop_up"
+        android:onClick="ButStop_shuoshu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -145,8 +145,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="ButReset_shuoshu"
         android:background="@drawable/reset_up"
+        android:onClick="ButReset_shuoshu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.251"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -162,12 +162,13 @@
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="ButStart_mazui"
         android:background="@drawable/start_up"
+        android:onClick="ButStart_mazui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -186,8 +187,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="ButStop_mazui"
         android:background="@drawable/stop_up"
+        android:onClick="ButStop_mazui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -206,8 +207,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="ButReset_mazui"
         android:background="@drawable/reset_up"
+        android:onClick="ButReset_mazui"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -1422,7 +1423,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="备用"
+        android:text="监控"
         android:textColor="#ffffff"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -1533,16 +1534,16 @@
     <!-- 备用  -->
 
     <Button
-        android:id="@+id/beiyong_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/monitor_id"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
 
-        android:background="@drawable/led_on"
-        android:onClick="Butbeiyong"
+        android:background="@drawable/monitor_up"
+        android:onClick="Butmonitor"
         app:layout_constraintBottom_toBottomOf="@+id/guanpiandeng_id"
-        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 

@@ -3,6 +3,7 @@
     package="com.yy.k.magicmirror">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +21,6 @@
             </intent-filter>
         </activity>
 
-
         <activity
             android:name=".Contacts"
             android:label=""
@@ -35,6 +35,14 @@
             android:name=".UnitMonitoringDataActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             >
+        </activity>
+
+        <activity
+            android:name="com.yy.k.magicmirror.Monitor"
+            android:label=""
+            android:theme="@style/dialogstyle"
+            >
+
         </activity>
 
         <receiver
